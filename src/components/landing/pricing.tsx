@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Pricing() {
   return (
     <section id="pricing" className="py-32 relative">
@@ -14,11 +16,9 @@ export default function Pricing() {
           <h2 className="text-white mb-4">Simple, Transparent Pricing</h2>
         </div>
 
-        {/* Pricing Grid */}
         <div className="grid grid-cols-2 gap-8 max-w-3xl mx-auto">
-          {/* Starter Plan */}
           <div
-            className="border rounded-sm p-12 flex flex-col"
+            className="border rounded-sm p-12 flex flex-col hover-bg-panel transition-all"
             style={{
               borderColor: "var(--border-medium)",
               backgroundColor: "var(--bg-panel)",
@@ -90,18 +90,21 @@ export default function Pricing() {
                 Email support
               </li>
             </ul>
-            <button className="btn btn-secondary w-full">Get Started</button>
+            <Link href="#" className="btn btn-secondary w-full" aria-label="Get Started with Starter plan">
+              Get Started
+            </Link>
           </div>
 
-          {/* Pro Plan */}
           <div
-            className="border rounded-sm p-12 flex flex-col relative"
+            className="border rounded-sm p-12 flex flex-col relative hover-bg-panel transition-all"
             style={{
               borderColor: "var(--border-strong)",
               backgroundColor: "var(--bg-elevated)",
             }}
           >
-            <span className="absolute -top-3 -right-8 bg-white text-black font-mono text-xs px-2 py-1 rounded-sm font-bold">
+            <span 
+              className="absolute -top-3 right-4 bg-white text-black font-mono text-xs px-2 py-1 rounded-sm font-bold"
+            >
               RECOMMENDED
             </span>
             <h3 className="text-white text-lg mb-4">Professional</h3>
@@ -188,12 +191,13 @@ export default function Pricing() {
                 API access
               </li>
             </ul>
-            <button className="btn btn-primary w-full">Start Free Trial</button>
+            <Link href="#" className="btn btn-primary w-full" aria-label="Start Free Trial for Professional plan">
+              Start Free Trial
+            </Link>
           </div>
         </div>
       </div>
 
-      {/* Vertical line */}
       <div
         className="absolute top-0 left-1/2 w-px h-full -translate-x-1/2 -z-10"
         style={{ backgroundColor: "var(--border-subtle)" }}

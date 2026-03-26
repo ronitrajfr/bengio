@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer
@@ -7,62 +9,22 @@ export default function Footer() {
       style={{ borderTopColor: "var(--border-medium)" }}
     >
       <div className="container flex justify-between items-center">
-        <a href="#" className="font-display font-bold text-lg text-white">
+        <Link href="#" className="font-display font-bold text-lg text-white">
           HINTON
-        </a>
+        </Link>
         <div className="flex gap-6">
-          <a
-            href="#"
-            className="text-xs font-medium transition-colors"
-            style={{ color: "var(--text-muted)" }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.color = "var(--text-main)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.color = "var(--text-muted)")
-            }
-          >
+          <Link href="#" className="nav-link text-xs font-medium" aria-label="Documentation">
             Documentation
-          </a>
-          <a
-            href="#"
-            className="text-xs font-medium transition-colors"
-            style={{ color: "var(--text-muted)" }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.color = "var(--text-main)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.color = "var(--text-muted)")
-            }
-          >
+          </Link>
+          <Link href="#" className="nav-link text-xs font-medium" aria-label="API Reference">
             API Reference
-          </a>
-          <a
-            href="#"
-            className="text-xs font-medium transition-colors"
-            style={{ color: "var(--text-muted)" }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.color = "var(--text-main)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.color = "var(--text-muted)")
-            }
-          >
+          </Link>
+          <Link href="#" className="nav-link text-xs font-medium" aria-label="Support">
             Support
-          </a>
-          <a
-            href="#"
-            className="text-xs font-medium transition-colors"
-            style={{ color: "var(--text-muted)" }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.color = "var(--text-main)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.color = "var(--text-muted)")
-            }
-          >
+          </Link>
+          <Link href="#" className="nav-link text-xs font-medium" aria-label="Privacy Policy">
             Privacy
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

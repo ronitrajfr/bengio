@@ -231,4 +231,17 @@
   .text-xs {
     font-size: 0.75rem;
   }
+
+  .nav-link {
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+  }
+
+  .nav-link:hover {
+    color: var(--text-main);
+  }
+
+  .hover-bg-panel:hover {
+    background-color: var(--bg-panel);
+  }
 }

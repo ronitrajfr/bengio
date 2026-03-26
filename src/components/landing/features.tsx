@@ -14,21 +14,13 @@ export default function Features() {
           <h2 className="text-white mb-4">What Hinton Can Do</h2>
         </div>
 
-        {/* Bento Grid */}
         <div
           className="grid grid-cols-12 gap-px"
           style={{ backgroundColor: "var(--border-subtle)" }}
         >
-          {/* Card 1 - 8 cols */}
           <div
-            className="col-span-8 p-8 flex flex-col gap-6 transition-all"
+            className="col-span-8 p-8 flex flex-col gap-6 transition-all hover-bg-panel"
             style={{ backgroundColor: "var(--bg-base)" }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.backgroundColor = "var(--bg-panel)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.backgroundColor = "var(--bg-base)")
-            }
           >
             <div className="flex justify-between items-start">
               <div>
@@ -50,16 +42,9 @@ export default function Features() {
             </div>
           </div>
 
-          {/* Card 2 - 4 cols */}
           <div
-            className="col-span-4 p-8 flex flex-col gap-6 transition-all"
+            className="col-span-4 p-8 flex flex-col gap-6 transition-all hover-bg-panel"
             style={{ backgroundColor: "var(--bg-base)" }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.backgroundColor = "var(--bg-panel)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.backgroundColor = "var(--bg-base)")
-            }
           >
             <div>
               <h3 className="text-white mb-2">Error Detection</h3>
@@ -69,16 +54,9 @@ export default function Features() {
             </div>
           </div>
 
-          {/* Card 3 - 4 cols */}
           <div
-            className="col-span-4 p-8 flex flex-col gap-6 transition-all"
+            className="col-span-4 p-8 flex flex-col gap-6 transition-all hover-bg-panel"
             style={{ backgroundColor: "var(--bg-base)" }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.backgroundColor = "var(--bg-panel)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.backgroundColor = "var(--bg-base)")
-            }
           >
             <div>
               <h3 className="text-white mb-2">Report Generation</h3>
@@ -88,16 +66,9 @@ export default function Features() {
             </div>
           </div>
 
-          {/* Card 4 - 4 cols */}
           <div
-            className="col-span-4 p-8 flex flex-col gap-6 transition-all"
+            className="col-span-4 p-8 flex flex-col gap-6 transition-all hover-bg-panel"
             style={{ backgroundColor: "var(--bg-base)" }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.backgroundColor = "var(--bg-panel)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.backgroundColor = "var(--bg-base)")
-            }
           >
             <div>
               <h3 className="text-white mb-2">Full Coverage</h3>
@@ -107,16 +78,9 @@ export default function Features() {
             </div>
           </div>
 
-          {/* Card 5 - 4 cols */}
           <div
-            className="col-span-4 p-8 flex flex-col gap-6 transition-all"
+            className="col-span-4 p-8 flex flex-col gap-6 transition-all hover-bg-panel"
             style={{ backgroundColor: "var(--bg-base)" }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.backgroundColor = "var(--bg-panel)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.backgroundColor = "var(--bg-base)")
-            }
           >
             <div>
               <h3 className="text-white mb-2">Real-Time Reporting</h3>
@@ -128,7 +92,6 @@ export default function Features() {
         </div>
       </div>
 
-      {/* Vertical line */}
       <div
         className="absolute top-0 left-1/2 w-px h-full -translate-x-1/2 -z-10"
         style={{ backgroundColor: "var(--border-subtle)" }}
